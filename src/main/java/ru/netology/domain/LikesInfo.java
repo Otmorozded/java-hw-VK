@@ -2,6 +2,9 @@ package ru.netology.domain;
 
 public class LikesInfo {
 
+    boolean canLike;// может ли текущий пользователь поставить лайк
+    int count;// Кол-во пользователей которым понравилась запись
+
     public int getCount() {
         return count;
     }
@@ -10,7 +13,7 @@ public class LikesInfo {
         this.count = count;
     }
 
-    int count;// Кол-во пользователей которым понравилась запись
+
 
     public boolean isCanLike() {
         return canLike;
@@ -20,6 +23,6 @@ public class LikesInfo {
         this.canLike = canLike;
     }
 
-    boolean canLike;// может ли текущий пользователь поставить лайк
+
 
 }
